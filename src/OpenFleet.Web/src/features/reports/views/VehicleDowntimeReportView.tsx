@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Truck } from 'lucide-react'
+import { Train } from 'lucide-react'
 import { Badge } from '@/components/ui/Badge'
 import { DataTable } from '@/components/ui/DataTable'
 import { exportToCsv } from '@/lib/csv'
@@ -45,7 +45,7 @@ export function VehicleDowntimeReportView() {
       isFetching={isFetching}
       onRetry={() => void refetch()}
       isEmpty={vehicles.length === 0}
-      emptyIcon={Truck}
+      emptyIcon={Train}
       emptyTitle="No downtime vehicles"
       emptyDescription="All vehicles are available or have no open maintenance activity."
       onExportCsv={handleExport}

@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
-import { Plus, Search, Truck } from 'lucide-react'
+import { Plus, Search, Train } from 'lucide-react'
 import { PageTitle } from '@/components/layout/PageTitle'
 import { DataTable } from '@/components/ui/DataTable'
 import { Badge } from '@/components/ui/Badge'
@@ -224,7 +224,7 @@ export function VehiclesPage() {
         isLoading={isLoading}
         getRowKey={(row) => row.id}
         onRowClick={(row) => navigate(`/vehicles/${row.id}`)}
-        emptyIcon={Truck}
+        emptyIcon={Train}
         emptyTitle="No vehicles found"
         emptyDescription="Try adjusting your filters or add a new vehicle."
         emptyAction={

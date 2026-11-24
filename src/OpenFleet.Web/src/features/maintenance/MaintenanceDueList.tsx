@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Truck } from 'lucide-react'
+import { Train } from 'lucide-react'
 import { Badge } from '@/components/ui/Badge'
 import { formatDate, formatNumber } from '@/lib/formatters'
 import type { VehicleDueForServiceResponse } from '@/types'
@@ -92,7 +92,7 @@ export function MaintenanceDueList() {
   if (dueItems.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center rounded-lg border border-dashed border-gray-200 py-16 text-center dark:border-gray-800">
-        <Truck className="h-10 w-10 text-gray-300 dark:text-gray-600" />
+        <Train className="h-10 w-10 text-gray-300 dark:text-gray-600" />
         <p className="mt-3 font-medium text-gray-900 dark:text-white">All up to date</p>
         <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
           No vehicles or assets are currently due for scheduled maintenance.

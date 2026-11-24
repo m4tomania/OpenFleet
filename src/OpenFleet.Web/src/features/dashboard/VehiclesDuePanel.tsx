@@ -1,4 +1,4 @@
-import { Truck } from 'lucide-react'
+import { Train } from 'lucide-react'
 import { Badge } from '@/components/ui/Badge'
 import { formatNumber } from '@/lib/formatters'
 import { DashboardPanel } from './DashboardPanel'
@@ -16,7 +16,7 @@ export function VehiclesDuePanel() {
       onRetry={() => void refetch()}
       onRefresh={() => void refetch()}
       isEmpty={!!data && data.totalDue === 0}
-      emptyIcon={Truck}
+      emptyIcon={Train}
       emptyTitle="All vehicles up to date"
       emptyDescription="No maintenance schedules are currently overdue."
     >

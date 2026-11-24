@@ -5,7 +5,7 @@ import {
   DollarSign,
   Package,
   ShieldAlert,
-  Truck,
+  Train,
   Wrench,
 } from 'lucide-react'
 
@@ -38,7 +38,7 @@ export const REPORT_DEFINITIONS: ReportDefinition[] = [
     slug: 'vehicle-downtime',
     title: 'Vehicle Downtime',
     description: 'Vehicles in maintenance or with open work orders affecting fleet availability.',
-    icon: Truck,
+    icon: Train,
     supportsDateFilter: true,
   },
   {

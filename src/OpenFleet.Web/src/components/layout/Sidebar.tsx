@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { clsx } from 'clsx'
 import {
   LayoutDashboard,
-  Truck,
+  Train,
   Package,
   ClipboardList,
   Eye,
@@ -41,7 +41,7 @@ type NavEntry = NavItem | ({ isGroup: true } & NavGroup)
 
 const navEntries: NavEntry[] = [
   { label: 'Dashboard', to: '/dashboard', icon: LayoutDashboard },
-  { label: 'Vehicles', to: '/vehicles', icon: Truck },
+  { label: 'Vehicles', to: '/vehicles', icon: Train },
   { label: 'Assets', to: '/assets', icon: Package },
   { label: 'Work Orders', to: '/work-orders', icon: ClipboardList },
   { label: 'Inspections', to: '/inspections', icon: Eye },
@@ -142,7 +142,7 @@ export function Sidebar({ onClose }: SidebarProps) {
             </svg>
           </div>
           <span className="text-base font-semibold tracking-tight text-gray-900 dark:text-white">
-            OpenFleet
+            RailFleet
           </span>
         </div>
 
@@ -221,7 +221,7 @@ export function Sidebar({ onClose }: SidebarProps) {
       </nav>
 
       <div className="border-t border-gray-100 px-4 py-3 dark:border-gray-800">
-        <p className="text-xs text-gray-400 dark:text-gray-600">OpenFleet v0.1.0</p>
+        <p className="text-xs text-gray-400 dark:text-gray-600">RailFleet v0.1.0</p>
       </div>
     </aside>
   )

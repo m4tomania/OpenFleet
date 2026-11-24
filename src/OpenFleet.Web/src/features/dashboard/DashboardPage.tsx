@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import {
   ClipboardList,
-  Truck,
+  Train,
   ShieldAlert,
   Package,
   PlugZap,
@@ -62,7 +62,7 @@ export function DashboardPage() {
   return (
     <div className="space-y-6">
       <PageTitle
-        title={settings?.organizationName ? `${settings.organizationName} Dashboard` : 'Dashboard'}
+        title="RailFleet Dashboard"
         subtitle="Fleet overview and operational status"
         actions={
           <Button
@@ -92,7 +92,7 @@ export function DashboardPage() {
         <StatCard
           label="Vehicles Due"
           value={vehiclesDue.data?.totalDue}
-          icon={Truck}
+          icon={Train}
           iconColor="text-orange-600 dark:text-orange-400"
           iconBg="bg-orange-50 dark:bg-orange-950"
           isLoading={vehiclesDue.isLoading}
